@@ -11,7 +11,7 @@ submitBtn.addEventListener('click', function() {
             const desc = json.weather[0].description;
 
             document.getElementById('city').innerHTML = name;
-            document.getElementById('temp').innerHTML = cels.toFixed(2);
+            document.getElementById('temp').innerHTML = cels.toFixed(2) + '&deg;c';
             document.getElementById('des').innerHTML = desc
         });
 
